@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" fill="none">
+  <defs>
+    <linearGradient id="mkjBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0047BA" />
+      <stop offset="50%" stop-color="#0066FF" />
+      <stop offset="100%" stop-color="#003882" />
+    </linearGradient>
+    <linearGradient id="mkjOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#FF3E00" />
+      <stop offset="50%" stop-color="#FF7700" />
+      <stop offset="100%" stop-color="#FFAA00" />
+    </linearGradient>
+    <linearGradient id="screenGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0052CC" />
+      <stop offset="100%" stop-color="#00C7FF" />
+    </linearGradient>
+    <filter id="subtleDrop" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-color="#0047BA" flood-opacity="0.15"/>
+    </filter>
+  </defs>
+
+  <!-- Left Emblem: Dual Devices + Car Hood + Dynamic Swoosh -->
+  <g transform="translate(12, 10)">
+    <!-- Dynamic Orbiting Swoosh (Orange) -->
+    <path d="M 5,82 C 12,25 78,8 96,32 C 106,52 86,88 44,94 C 22,96 10,90 5,82 Z" 
+          stroke="url(#mkjOrange)" stroke-width="5" fill="none" stroke-linecap="round" />
+    <circle cx="96" cy="32" r="4.5" fill="#FFAA00" />
+    
+    <!-- Modern Smartphone Silhouette -->
+    <rect x="22" y="24" width="24" height="46" rx="5" fill="#FFFFFF" stroke="#0047BA" stroke-width="2.5" filter="url(#subtleDrop)" />
+    <rect x="25" y="28" width="18" height="38" rx="2" fill="url(#screenGrad)" />
+    <circle cx="34" cy="62" r="1.5" fill="#FFFFFF" />
+
+    <!-- Laptop / Display Behind -->
+    <rect x="44" y="32" width="42" height="28" rx="3" fill="#FFFFFF" stroke="#003882" stroke-width="2.5" />
+    <rect x="47" y="35" width="36" height="21" rx="1.5" fill="url(#mkjBlue)" />
+    <path d="M 38,60 L 92,60 L 96,65 L 34,65 Z" fill="#0047BA" />
+
+    <!-- Wireless Earbud / Pod Accent -->
+    <circle cx="92" cy="74" r="6" fill="#FFFFFF" stroke="#FF7700" stroke-width="2"/>
+    <path d="M 92,80 L 92,88" stroke="#FF7700" stroke-width="2.5" stroke-linecap="round" />
+
+    <!-- Tokunbo Car Silhouette -->
+    <path d="M 52,78 C 52,71 61,66 72,66 C 81,66 89,71 90,78 Z" fill="url(#mkjOrange)" />
+    <circle cx="58" cy="83" r="3.5" fill="#0A2540" stroke="#FFAA00" stroke-width="1.5" />
+    <circle cx="84" cy="83" r="3.5" fill="#0A2540" stroke="#FFAA00" stroke-width="1.5" />
+  </g>
+
+  <!-- MKJ Brand Typography (Royal Blue + Navy) -->
+  <text x="130" y="65" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-weight="900" font-size="52" fill="url(#mkjBlue)" letter-spacing="1">MKJ</text>
+  <text x="258" y="65" font-family="'Space Grotesk', 'Plus Jakarta Sans', sans-serif" font-weight="800" font-size="34" fill="#0A2540" letter-spacing="3">ENTERPRISES</text>
+  
+  <!-- Subtitle Tagline in Orange-Red -->
+  <text x="132" y="93" font-family="'JetBrains Mono', 'Space Grotesk', monospace" font-weight="700" font-size="12" fill="#FF4500" letter-spacing="3.5">PHONES • LAPTOPS • CARS • ACCESSORIES</text>
+
+  <!-- Orange/Blue Dual Gradient Accent Line -->
+  <rect x="132" y="101" width="370" height="3" rx="1.5" fill="url(#mkjOrange)" />
+</svg>

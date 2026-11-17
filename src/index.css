@@ -1,0 +1,131 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --color-primary: #0052cc;
+    --color-orange: #ff6b00;
+    --color-navy: #0a2540;
+    --color-bg: #f8fafc;
+  }
+
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    background-color: #f8fafc;
+    color: #0f172a;
+    overflow-x: hidden;
+    font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+  }
+
+  h1, h2, h3, h4, h5, h6, .font-display {
+    font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    letter-spacing: -0.02em;
+    font-weight: 700;
+  }
+}
+
+/* Custom refined scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Shopease-level Clean Luxury Product Card */
+.product-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+
+.product-card:hover {
+  border-color: #cbd5e1;
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px -6px rgba(15, 23, 42, 0.08), 0 4px 8px -2px rgba(15, 23, 42, 0.04);
+}
+
+/* Clean UI Cards */
+.clean-card {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 1rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* Clean Header Navigation */
+.clean-nav, .glass-nav {
+  background: rgba(255, 255, 255, 0.96);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border-bottom: 1px solid #e2e8f0;
+}
+
+/* Subtle background pattern */
+.bg-subtle-grid {
+  background-size: 24px 24px;
+  background-image: radial-gradient(circle, rgba(0, 82, 204, 0.05) 1px, transparent 1px);
+}
+
+/* Clean Logo Typography Gradients */
+.text-brand-blue {
+  color: #0052cc;
+}
+
+.text-brand-orange {
+  color: #ff5500;
+}
+
+/* Professional Buttons */
+.btn-primary-blue {
+  background-color: #0052cc;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-primary-blue:hover {
+  background-color: #0043a8;
+  transform: translateY(-1px);
+}
+
+.btn-primary-orange {
+  background-color: #ff5500;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-primary-orange:hover {
+  background-color: #e04a00;
+  transform: translateY(-1px);
+}
+
+.btn-whatsapp-clean {
+  background-color: #10b981;
+  color: #ffffff;
+  font-weight: 600;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.15s ease;
+}
+.btn-whatsapp-clean:hover {
+  background-color: #059669;
+  transform: translateY(-1px);
+}
